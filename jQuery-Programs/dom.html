@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery DOM Manipulation</title>
+    <script src="./jquery-3.7.1.min.js"
+    ></script>
+</head>
+<body>
+    <h1>Welcome To Dom Manipulation</h1>
+    <hr>
+    <p>The peter <b>piper</b> picked a <b>peck of </b>pickled <b>peppers</b>.. </p>
+    <button id="p1">Get Text</button>
+    <button id="p2">get HTML</button>
+    <script>
+        $(document).ready(function(){
+            $("#p1").click(function()
+        {
+            alert($("p").text());
+        });
+        $("#p2").click(function()
+        {
+            alert($("p").html());
+        });
+
+        });
+    </script>
+</body>
+</html>

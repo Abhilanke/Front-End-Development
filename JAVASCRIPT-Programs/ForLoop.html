@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For of loop</title>
+</head>
+<body>
+    <h1>Using for of loop</h1>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        let data1="",data2="";
+        let selfHelpbooks=[ "Good vibe good life","Power of Thoughts","Mindset","The art of public speaking"];
+        for(let i=0;i<selfHelpbooks.length;i++){
+            data1+=selfHelpbooks[i]+"<br>";
+        }
+        document.getElementById("demo").innerHTML=data1;
+
+
+        document.write("====for of Loop====");
+
+        for( let a of selfHelpbooks)
+        {
+            data2+=a+"<br>";
+        }
+        document.getElementById("demo2").innerHTML=data2;
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>POPULAR IT COURSES</h1>
+
+    <ul>
+        <li class="a1">MERN</li>
+        <li class="a2">MS Dynamics</li>
+        <li class="a3">Java</li>
+        <li class="a4">Data Analyst</li>
+    </ul>
+    
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("h1").css({
+                "background-color": "yellow",
+                "text-align": "center"
+            });
+            $("ul").css("text-align", "center");
+            $(".a1").css("color", "pink");
+            $(".a2").css({
+                "color": "red",
+                "background-color": "green"
+            });
+            $(".a3").css("color", "green");
+            $(".a4").css("color", "orange");
+        });
+    </script>
+</body>
+</html>

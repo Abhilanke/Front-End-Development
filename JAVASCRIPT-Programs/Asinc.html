@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asinc Function</title>
+</head>
+<body>
+    <script>
+        async function myfunction() {
+            console.log("Converting normal function into async function");
+            return Promise.resolve(1);
+            
+        }
+        myfunction();
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+    let radius=5;
+
+    let area = function(r)
+    {
+        return (3.14*r*r);
+    }
+
+    let diameter = function(r)
+    {
+            return (2*r);
+    }
+
+    let calculate=function(r,logicalFun)
+    {
+            return logicalFun(r);
+    }
+  console.log(calculate(radius,area));
+   console.log(calculate(radius,diameter));
+//console.log (area(radius));
+//console.log(diameter(radius));
+
+   </script> 
+</body>
+</html>

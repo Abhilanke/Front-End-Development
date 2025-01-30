@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing Parameter</title>
+</head>
+<body>
+    <input type="button" id="btn"  value="click">
+    <script>
+        let myname=prompt("Please enter your name");
+        document.getElementById("btn").addEventListener("click",()=>
+    {
+Getname(myname);
+    });
+    function Getname(name){
+        alert("Hello "+name +" I have heard You");
+    }
+    </script>
+</body>
+</html>

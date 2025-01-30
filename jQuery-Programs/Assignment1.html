@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with DOM On jQuery</title>
+<style>
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#outer
+{
+    margin-left: 40px;
+}
+header
+{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+h3
+{
+    margin-top: 20px;
+}
+#role{font-size: 18px;}
+.coursename, li
+{
+font-size: 18px;
+margin-top: 5px;
+border-bottom: 1px solid grey;
+padding: 5px;
+}
+#userform
+{
+    margin-top: 20px;
+}
+input[type="text"]
+{
+    width: 400px;
+    height: 30px;
+}
+input[type="button"]
+{
+    width: 100px;
+    height: 32px;
+    font-size: 18px;
+    
+    
+}
+
+</style>
+<script src="./jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".coursename1").css({
+            "color":"orange","background-color":"green"
+        });
+        $(".coursename2").css({
+            "color":"blue","background-color":"palegreen"
+        });
+        $(".coursename3").css({
+            "color":"yellow","background-color":"grey"
+        });
+        $(".coursename4").css({
+            "color":"white","background-color":"black"
+        });
+
+
+        //add cources
+
+        $('#addCourse').click(function() {
+                let content = $('#courseitem').val();
+                if (content) {
+                    $('#Courselist').append(`<li>${content}</li>`);
+                    $('#courseitem').val('');
+                    $("#Courselist").css({"color":"yellow","background-color":"grey"})
+                }
+            });
+
+        
+
+
+            // Remove Course by Name
+            $('#removeCourse').click(function() {
+                let content = $('#courseitem').val();
+                if (content) {
+                    $('#Courselist li').each(function() {
+                        if ($(this).text() === content) {
+                            $(this).remove();
+                        }
+                    });
+                    $('#courseitem').val('');
+                }
+            });
+
+    });
+</script>
+</head>
+<body>
+    <div id="outer">
+        <header>
+            <h2 id="name">Anil Giri</h2>
+            <p id="role">Training director</p>
+        </header>
+        <div id="courses">
+            <h3 id="listofCourses">Courses</h3>
+            <ul id="Courselist">
+                <li class="coursename1">Java Fullstack</li>
+                <li class="coursename2">Dot Net Fullstack</li>
+                <li class="coursename3">MSD 365</li>
+                <li class="coursename4">Salesforce</li>
+            </ul>
+        </div>
+        <form>
+            <input type="text" id="courseitem" placeholder="Enter course name">
+            <button type="button" id="addCourse">Add</button>
+            <button id="removeCourse">Remove</button>
+        </form>
+    </div>
+
+</body>
+</html>

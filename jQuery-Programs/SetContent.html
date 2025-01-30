@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Conetent</title>
+    <Script src="./jquery-3.7.1.min.js"></Script>
+<script>
+    $(document).ready(function(){
+
+        $("#p1").click(function(){
+            $("p").text("She sells <b>seacells</b> on seashore")
+        });
+        $("#p2").click(function(){
+            $("p").html("She sells <b>seacells</b> on seashore")
+        });
+
+    }
+    );
+</script>
+</head>
+
+<body>
+    <p>Using jQuary to add Content to this paragraph </p>
+       <button id="p1">Add text</button>
+       <button id="p2">Add html</button>
+</body>
+</html>

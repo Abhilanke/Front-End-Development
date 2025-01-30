@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+    background-color: orange;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 165, 0, 0.8);
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid rgba(16, 11, 11, 0.3);
+    border-radius: 50%;
+}
+
+.orbit1 {
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+    animation: rotate1 10s linear infinite;
+}
+
+.orbit2 {
+    width: 250px;
+    height: 250px;
+    margin-top: -125px;
+    margin-left: -125px;
+    animation: rotate2 15s linear infinite;
+}
+
+.orbit3 {
+    width: 350px;
+    height: 350px;
+    margin-top: -175px;
+    margin-left: -175px;
+    animation: rotate3 20s linear infinite;
+}
+
+.planet {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    background-color: lightblue;
+    border-radius: 50%;
+}
+
+.planet1 {
+    background-color: red;
+}
+
+.planet2 {
+    background-color: blue;
+}
+
+.planet3 {
+    background-color: green;
+}
+
+@keyframes rotate1 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes rotate2 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes rotate3 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+    </style>
+</head>
+<body>
+
+    <div class="solar-system">
+        <div class="sun"></div>
+
+        <div class="orbit orbit1">
+            <div class="planet planet1"></div>
+        </div>
+
+        <div class="orbit orbit2">
+            <div class="planet planet2"></div>
+        </div>
+
+        <div class="orbit orbit3">
+            <div class="planet planet3"></div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .shaddow {
+    box-shadow: 0 3px 6px 0 rgba(227, 174, 14, 0.2);
+  }
+  
+  /* HEADER CSS */
+  
+  header,
+  #header {
+    margin-top: 5px;
+    border-top: 3px solid #2c4152;
+  }
+  .navbar {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    bottom: 87.5%;
+    /* height: 90px; */
+    width: 100%;
+    background-color: #f7f7f5;
+  }
+  
+  .navlogo {
+    padding-top: 50px;
+    width: 32%;
+  }
+  #logo {
+    margin: 20px;
+    margin-left: 20%;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    width: 50px;
+    height: 35.7px;
+    
+  }
+  .menu {
+    width: 40%;
+    margin-top: 65px;
+  }
+  ul,
+  a {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  a:hover {
+    font-weight: 700;
+  }
+  .search {
+    width: 17%;
+    border: 1px solid #2c4152;
+    border-radius: 17px;
+    margin-top: 55px;
+    margin-bottom: 5px;
+  
+    background-color: rgb(255, 253, 237);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #search {
+    border-radius: 17px;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 12px;
+    width: 320px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    background-color: rgb(255, 253, 237);
+  }
+  
+  /* MAIN CSS */
+  
+  section {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 570px; */
+    background-color: gray;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+   
+  }
+  .item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(235, 241, 241);
+    border-radius: 20px;
+  }
+  
+  
+  
+  img {
+    height: 400px;
+    width: 280px;
+  }
+  
+  h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(35, 201, 129);
+  }
+  span {
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgb(15, 65, 228);
+    display: block;
+    text-align: center;
+  }
+  
+  p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: rgb(243, 135, 46);
+    display: block;
+    text-align: center;
+  }
+  
+  

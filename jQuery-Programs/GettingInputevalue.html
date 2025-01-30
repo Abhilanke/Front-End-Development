@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p>name:<input type="text" id="uname"></p>
+    <p>Password:<input type="text" id="upassword"></p>
+    <button id="b1">Getname</button>
+    <button id="b2">GetPassword</button>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                alert($("#uname").val());
+
+            });
+            $("#b2").click(function(){
+                alert($("#upassword").val());
+
+            });
+
+        });
+    </script>
+</body>
+</html>

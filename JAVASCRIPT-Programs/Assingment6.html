@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #09cbe1;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background-color: #e0e30c;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        form div {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center; 
+            gap: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2 style="text-align: center;">Login</h2>
+        <div>
+            <input type="text" id="UserName" placeholder="UserName" required>
+        </div>
+        <div>
+            <input type="password" id="Password" placeholder="Password" required>
+        </div>
+        <div class="button-container">
+        <input type="button" id="btn" value="Login">
+        </div>
+    </form>
+    
+    <script>
+        let myname = "abhi";
+        let mypassword = "abhi";
+        document.getElementById("btn").addEventListener("click", () => {
+            let userName = document.getElementById("UserName").value;
+            let userPassword = document.getElementById("Password").value;
+            if (userName === myname && userPassword === mypassword) {
+                alert("Valid Login");
+            } else {
+                alert("Invalid Login");
+            }
+        });
+    </script>
+</body>
+</html>

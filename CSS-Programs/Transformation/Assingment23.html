@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .body{
+            width: 100px;
+            height: 100px;
+           
+         background-color: aquamarine;
+        }
+        #child{
+            position: relative;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 100px;
+            height: 100px;
+          
+            animation-name: name ;
+            animation-duration: 10s;
+           animation-iteration-count: infinite;
+            animation-direction: alternate;
+           
+        }
+
+        /*moving*/
+        @keyframes name
+        {
+            from{
+                top: 20px;
+                left: 20px;
+                transform: rotate(360deg);
+                background-color: rgb(255, 55, 0);
+                
+               
+            }
+            to{
+                top: 100px;
+                left: 1000px;
+                background-color: blue;
+                
+
+            }
+        }
+        
+
+    </style>
+</head>
+<body class="body">
+    <div class="container">
+        <div id="child"></div>
+    </div>
+</body>
+</html>

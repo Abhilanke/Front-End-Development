@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+async function getData() {
+  const url = "https://datausa.io/api/data?drilldowns=Nation&measures=Population";
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const json = await response.json();
+    console.log("Nation         Population       Year");
+    console.log(json.data[0].Nation+ "   "+json.data[0].Population+"        "+json.data[0].Year); // printing the data of  some of the variables from first row
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+getData();
+
+  </script>
+</body>
+</html>

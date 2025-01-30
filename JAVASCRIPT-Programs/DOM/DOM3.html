@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with DOM</title>
+<style>
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#outer
+{
+    margin-left: 40px;
+}
+header
+{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+h3
+{
+    margin-top: 20px;
+}
+#role{font-size: 18px;}
+.coursename
+{
+font-size: 18px;
+margin-top: 5px;
+border-bottom: 1px solid grey;
+padding: 5px;
+}
+#userform
+{
+    margin-top: 20px;
+}
+input[type="text"]
+{
+    width: 400px;
+    height: 30px;
+}
+input[type="button"]
+{
+    width: 100px;
+    height: 32px;
+    font-size: 18px;
+}
+
+</style>
+
+</head>
+<body>
+    <div id="outer">
+    <header>
+        <h2 id="name">Anil Giri</h2>
+        <p id="role">Training director</p>
+    </header>
+<div id="courses">
+<h3 id="listofCourses"> Courses </h3>
+<ul id="parent">
+<li class="coursename"> java fullstack</li>
+<li class="coursename"> Dot net fullstack</li>
+<li class="coursename"> MSD 365</li>
+<li class="coursename"> Salesforce</li>
+</ul>
+</div>
+<div id="userform">
+<form action="">
+    <input type="text" id="inputAdd">
+     <input type="button" onclick="AddCource()" value="AddCource"></input>
+</form>
+</div>
+</div>
+<script src="DOM3.js">
+</script>
+</body>
+</html>

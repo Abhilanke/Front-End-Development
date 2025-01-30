@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 4</title>
+    <style>
+        .abhi{
+            background-color: aquamarine;
+            text-align: center;
+
+        }
+        input{
+            background-color: rgb(30, 131, 219);
+        }
+        .abhi1{
+            background-color: aliceblue;
+
+        }
+        
+    </style>
+    <script>
+        function getInput() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            return [num1, num2];
+        }
+        function add() {
+            const [num1, num2] = getInput();
+            alert("Addition is: " + (num1 + num2));
+        }
+        function sub() {
+            const [num1, num2] = getInput();
+            alert("Subtraction is: " + (num1 - num2));
+        }
+        function mult() {
+            const [num1, num2] = getInput();
+            alert("Multiplication is: " + (num1 * num2));
+        }
+        function div() {
+            const [num1, num2] = getInput();
+                alert("Division is: " + (num1 / num2));
+           
+        }
+    </script>
+</head>
+<body>
+    <form class="abhi">
+        <h1>Relevant result should be Displayed in alert box on Click below button</h1>
+        <div>
+            <label for="num1">No 1</label>
+            <input class="abhi1" type="text" id="num1" placeholder="Enter First Number">
+        </div>
+        <br>
+        <div>
+            <label for="num2">No 2</label>
+            <input class="abhi1" type="text" id="num2" placeholder="Enter Second Number">
+        </div>
+        <br>
+        <input type="button" onclick="add()" value="Addition">
+        <input type="button" onclick="sub()" value="Subtraction">
+        <input type="button" onclick="mult()" value="Multiplication">
+        <input type="button" onclick="div()" value="Division">
+        <br><br>
+    </form>
+</body>
+</html>

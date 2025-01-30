@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+          background-image: url(./back.jpg); 
+        }
+        .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ 
+
+}
+.item {
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid black;
+  background-image: url(./back.jpg);
+}
+img {
+  height: 200px;
+  width: 280px;
+  object-fit: contain;
+}
+
+h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(151, 35, 201);
+}
+span {
+  margin-top: 5px;
+  font-size: 20px;
+  color: rgb(5, 109, 17);
+  display: block;
+  text-align: center;
+  font-family:mypizza;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: rgb(7, 11, 31);
+  display: block;
+  text-align: center;
+  font-family: myfont;
+}
+.pizza{
+    font-family:pizza;
+
+}
+@font-face {
+    font-family: mypizza;
+    src: url(./docktrin/docktrin.ttf);
+}
+@font-face {
+    font-family: pizza;
+    src: url(./28_days_later/28\ Days\ Later.ttf);
+}
+@font-face {
+    font-family: myfont;
+    src: url(./badaboom_bb/BADABB__.TTF);
+}
+    </style>
+</head>
+<body>
+    <section>
+        <h1 style="text-align: center; font-family: myfont; font-size: 50px;">Pizza in Pune</h1>
+        <div class="container shaddow">
+            <div class="item shaddow">
+              <img src="./pizza.jpg" alt="" />
+              <h3 class="pizza">Domino's Pizza</h3>
+              <span><strong>Starting at ₹199</strong></span>
+              <p><strong>Min 44% OFF</strong></p>
+            </div>
+            <div class="item shaddow">
+              <img src="./Domino's Pizza.jpg" alt="" />
+              <h3 class="pizza"> Largo Pizzeria</h3>
+              <span><strong>Starting at ₹299</strong></span>
+              <p><strong>Min 50% OFF</strong></p>
+            </div>
+            <div class="item shaddow">
+              <img src="./Crust Pizzeria.jpg" alt="" />
+              <h3 class="pizza">Crust Pizzeria</h3>
+              <span><strong>Starting at ₹99</strong></span>
+              <p><strong>Min 45% OFF</strong></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

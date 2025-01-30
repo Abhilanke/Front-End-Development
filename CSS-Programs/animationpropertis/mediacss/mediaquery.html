@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+<style>
+     *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        text-align: center;
+    }
+
+#outer
+{
+    font-size: 40px;
+color: blueviolet;
+font-weight: 700;
+}
+#inner
+{
+    color: Green;
+    font-size: 20px;
+}  
+
+@media screen and (max-width: 500px)
+{
+  
+#inner
+{ 
+    background-color: cadetblue;
+    color: white;
+    text-wrap: nowrap;
+}
+    
+}
+
+</style>
+
+</head>
+<body>
+    <div id="outer">
+        CSS Media Query
+        <div id="inner"> CSS Media query is used to set different layouts for different screen dimensions</div>
+    </div>
+</body>
+</html>

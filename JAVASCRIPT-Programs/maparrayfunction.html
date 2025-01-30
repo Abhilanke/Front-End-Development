@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Array Function</title>
+</head>
+<body>
+    <script>
+        //with parameter
+        // let arr=[11,22,33]
+        // //console.log(arr)
+        // let a =arr.map((value,index,array)=>{
+        //     console.log(value,index,array)
+        //     return value + 1;
+        // })
+        // confirm.log(a);
+        
+        // Array Fuction without paramater
+        let myarr=[10,20,30,40]
+        let myarr2=myarr.map(item=>item);
+        console.log(myarr);
+        console.log(myarr2);
+        // Array Function with parameter
+        let myarr3=myarr.map((item,arrayindex)=>{
+         console.log(item + " " +arrayindex);
+         return item*2;
+
+         }
+        )
+        console.log(myarr3);
+    </script>
+</body>
+</html>

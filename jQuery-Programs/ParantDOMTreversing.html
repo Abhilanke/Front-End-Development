@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $(".child").parent().css("background-color","red");
+           // $(".child").parents().css("background-color","red");
+           $(".child").parentsUntil("grand-parents").css("background-color","red");
+
+        });
+    </script>
+</head>
+<body>
+    <h2>List of Popular Cources</h2>
+    <div class="greant-grand parant">
+        <p>Welcome</p>
+    <div class="grand-parents">
+        <p>Seven-Mentors</p> 
+    <ul class="parent">
+        <li class="child">Data Mining</li>
+        <li class="child">Web Developer</li>
+        <li class="child">Coding instrictor</li>
+        <li class="child">Digital Marketing</li>
+    </ul>
+    </div></div>
+</body>
+</html>

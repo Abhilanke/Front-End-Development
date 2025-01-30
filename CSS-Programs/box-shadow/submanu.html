@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus</title>
+    <style>
+*
+{
+    margin:0;
+    padding:0;
+}
+#menubar
+{
+    display: flex;
+      width: 100%;
+      height: 60px; 
+    box-shadow: 3px 3px 3px 3px rgb(223, 215, 215);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+#menu
+{
+    display: flex;
+    gap: 50px;
+ }
+.menu-item, .submenu-item
+{
+    list-style: none;
+
+   
+}
+#secondmenu:hover #submenu
+{
+    display: block;
+    position: absolute;
+  
+}
+a
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#submenu
+{
+    padding: 10px;
+   background-color: rgb(219, 205, 205);
+    display: none;
+
+ 
+}
+.submenu-item
+{
+    padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="menubar">
+            <ul id="menu">
+<li class="menu-item"><a href="">Home</a></li>
+<li class="menu-item" id="secondmenu"><a href="">Services</a>
+<ul id="submenu">
+<li class="submenu-item"><a href="">Consulting</a> </li>
+<li class="submenu-item"><a href="">Training</a></li>
+<li class="submenu-item"><a href="">Development</a></li>
+
+
+</ul>
+
+</li>
+<li class="menu-item"><a href="">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

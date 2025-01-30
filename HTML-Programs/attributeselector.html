@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[alt]
+        {
+            border-style: solid;
+            border-color: red;
+
+        }
+        img[alt~=all]
+        {
+            border-style: solid;
+            border-color: green;
+
+        }
+        img[alt^="b"]
+        {
+            border: 5px solid blue;
+        }
+        img[alt$="y"]
+        {
+            border: 5px solid rgb(94, 215, 39);
+        }
+    </style>
+</head>
+<body>
+    <h2>Working with Attribute tag</h2>
+    <img src="images/travel.jpg" alt="travel image" width="550px">
+    <img src="images/cute.jpg">
+    <hr>
+    <h1>Working with Attribute tag</h1>
+    <img src="images/boy6.jpg" alt="travel image of all contrys " width="600px">
+    <img src="images/boys5.jpg" alt="this baby is vary beutifulle">
+    <hr>
+    <h1>Working with Attribute tag</h1>
+    <img src="images/myntra.jpg" alt="travel image of all contrys " width="600px">
+    <img src="images/burgur.jpg" alt="baby is vary beutifulle">
+    <br>
+    <h1>$ using ending tag </h1>
+    <img src="images/myntra.jpg" alt="travel image of all contry " width="200px">
+    <img src="images/burgur.jpg" alt="aby is vary beutifulle">
+    <br>
+
+</body>
+</html>

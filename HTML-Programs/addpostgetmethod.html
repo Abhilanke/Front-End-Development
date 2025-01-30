@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Working with form tag</h2>
+<form  action="https://www.google.com">
+<fieldset>
+<legend>User Registration Form</legend>
+
+<table>
+<tr>
+<td>Name:</td>
+<td><input type="text" placeholder="Your name" required pattern="[A-Za-z]{2,}"> </td>
+</tr>
+
+
+<tr> <td>Email:</td>
+<td> <input type="email" placeholder="Your email">  </td></tr>
+<tr>
+<td>Password:</td> 
+<td><input type="password" maxlength="10"> </td>
+
+</tr>
+<tr>
+    <td>Phone No:</td>
+    <td> <input type="number"> </td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td> <label for="male"> Male</label> <input type="radio" name="gender" id="male">       
+    <label for="female">Female</label> <input type="radio" name="gender" id="female">  </td>
+
+</tr>
+
+<tr>
+<td>Age:</td>
+<td> <input type="number" min="18" max="60" step="2">   </td>
+
+</tr>
+
+
+<tr><td>Language</td>
+<td>
+<select>
+    <option value="">Select your language</option>
+<option value="">Marathi</option>
+<option value="">Hindi</option>
+<option value="">English</option>
+</select>
+</td></tr>
+
+<tr> <td>Zip Code:</td>
+<td> <input type="number"> </td>
+</tr>
+<tr>
+<td>About:</td>
+<td> <textarea rows="2" cols="21"></textarea> </td>
+</tr>
+<tr>
+<td> <input type="submit" value="Register"> </td>
+
+</tr>
+</table>
+
+</fieldset>
+</form>
+
+</body>
+</html>

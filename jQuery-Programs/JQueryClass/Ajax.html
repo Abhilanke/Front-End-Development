@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The JQuery Example</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#drive").click(function (event) {
+          $("#stage").load("./AddClass.html");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>Click on the button to load html file</p>
+    <div id="stage" style="background-color: cc0">STAGE</div>
+    <input type="button" id="drive" value="load Data" />
+  </body>
+</html>

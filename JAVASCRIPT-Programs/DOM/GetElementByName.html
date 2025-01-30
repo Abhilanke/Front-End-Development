@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Function GetElementByName Example</title>
+    <script>
+        function getCound(){
+            let user=document.getElementsByName("gender");
+            console.log(user);
+            console.log(user.length);
+
+        }
+    </script>
+</head>
+<body>
+    Male:<input type="radio" name="gender" value="male">
+    Female:<input type="radio" name="gender" value="female">
+    <input type="button" value="Count" onclick="getCound()">
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Effects</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+      div {
+        width: 200px;
+        height: 100px;
+        cursor: pointer;
+        background-color: aquamarine;
+      }
+      span {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: palevioletred;
+        width: 200px;
+        height: 100px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Working with JQuery effects</h2>
+    <div>I am div</div>
+    <span>I am span</span>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("div").click(function () {
+        $("div").hide(2000);
+      });
+
+      $("span").click(function () {
+        $("span").hide(1000);
+      });
+    });
+  </script>
+</html>

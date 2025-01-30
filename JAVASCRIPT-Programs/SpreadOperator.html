@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Using Spead operator</h1>
+    <p></p>
+    <script>
+        let westzone=["Indore","ujjain","mumbai","pune","Nashik"];
+        let southzone=["ooty","bangalore","kerla","chainai"];
+        let eastzone=["shilong","Dispur","Imphal"];
+        let northzone=["srinagar","manali","naital"];
+        let cities=[...northzone,...eastzone,...westzone,...southzone]
+        let paragraph=document.querySelector("p");
+        console.log(paragraph);
+        paragraph.innerHTML=cities;
+
+//crateing object
+let Seater="5 Seater";
+let Car={
+    Brand:"Marcedes",
+    //Seater:Seater,
+    Seater,
+    Mileage:8
+}
+console.log(Car.Brand+" "+Car.Seater+" "+Car.Mileage);
+
+//let Car2={...Car};
+let Car2 ={...Car,Mileage:"10 kmpl"}
+//console.log(Car2.Brand);
+console.log(Car2.Mileage);
+
+    </script>
+</body>
+</html>

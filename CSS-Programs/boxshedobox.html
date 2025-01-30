@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+input:focus
+{
+    border-width: 3px;
+    border-color: rgb(89, 16, 226);
+  
+}
+input:required
+{
+background-color: rgb(227, 143, 199);
+}
+input:in-range
+{
+    color:green;
+}
+input:out-of-range
+{
+    color:red;
+}
+input[type='radio']:checked
+{
+box-shadow: 0 0 0 2px rgb(92, 4, 133);
+}
+
+</style>
+
+</head>
+<body>
+    <table align="center">
+        <th>
+            <h2>User Registration Form</h2>
+        </th>
+        <tr>
+            <td> <input type="text"  placeholder="Enter your name" required> </td>
+        </tr>
+        <tr>
+            <td><input type="number" min="18" max="60"  placeholder="Enter your age"   style="width: 162px;">  </td>
+
+        </tr>
+        <tr>
+            <td><input type="email" placeholder="enter your email" required>  </td>
+        </tr>
+      
+        <tr>
+    <td>
+        <label for="male">Male </label> <input type="radio" name="gender" id="male">     
+        <label for="female">Female </label> <input type="radio" name="gender" id="female">
+    </td>
+</tr>
+
+<tr>
+            <td>
+                <input type="submit">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML Property</title>
+    <script>
+        function writeMassage() {
+            document.getElementById("massage").innerHTML = "<h2>Good Afternoon !!!</h2>";
+        }
+
+        function readMassage() {
+           
+            const massageText = document.getElementById("massage").textContent;
+            const charCount = massageText.length;
+            alert("Number of characters: " + charCount);
+        }
+    </script>
+</head>
+<body>
+    <div id="massage"></div>
+    <input type="button" value="Write Your Massage" onclick="writeMassage()">
+    <input type="button" value="Number of char" onclick="readMassage()">
+</body>
+</html>

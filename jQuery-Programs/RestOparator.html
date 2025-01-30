@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script >
+        //function overloading //Polimorphisum
+        // function myfunction(b){
+        //     console.log(typeof b, arguments.length);
+
+        // }
+        // myfunction();
+        // myfunction(1);
+        // myfunction(23,7,8,0);
+        // myfunction("hello");
+        let s = 0;
+      function getSum(...numbers) {
+        for (let i of numbers) {
+          s = s + i;
+        }
+        console.log(s);
+      }
+      getSum(1, 2, 3, 4, 5);
+    </script>
+</body>
+</html>
