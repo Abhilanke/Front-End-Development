@@ -9,13 +9,14 @@ const initialvalues = {
 };
 
 function UserForm() {
-  const { values, errors, handleSubmit, handleBlur, handleChange } = useFormik({
-    initialValues: initialvalues,
-    validationSchema: singUpSchema,
-    onSubmit: (values) => {
-      console.log(values);
-    },
-  });
+  const { values, touched, errors, handleSubmit, handleBlur, handleChange } =
+    useFormik({
+      initialValues: initialvalues,
+      validationSchema: singUpSchema,
+      onSubmit: (values) => {
+        console.log(values);
+      },
+    });
   //   console.log(formik);
   console.log(errors.name);
   console.log(errors.email);
@@ -37,7 +38,9 @@ function UserForm() {
           onBlur={handleBlur}
           onChange={handleChange}
         />
-        <h6>{errors.name}</h6>
+        {touched.name && errors.name ? (
+          <h6 className="text-danger">{errors.name}</h6>
+        ) : null}
         <input
           type="text"
           className="form-control mb-2"
@@ -48,7 +51,9 @@ function UserForm() {
           onBlur={handleBlur}
           onChange={handleChange}
         />
-        <h6>{errors.password}</h6>
+        {touched.password && errors.password ? (
+          <h6 className="text-danger">{errors.password}</h6>
+        ) : null}
         <input
           type="text"
           className="form-control mb-2"
@@ -59,7 +64,9 @@ function UserForm() {
           onBlur={handleBlur}
           onChange={handleChange}
         />
-        <h6>{errors.confirmpassword}</h6>
+        {touched.confirmpassword && errors.confirmpassword ? (
+          <h6 className="text-danger">{errors.confirmpassword}</h6>
+        ) : null}
         <input
           type="text"
           className="form-control mb-2"
@@ -70,7 +77,10 @@ function UserForm() {
           onBlur={handleBlur}
           onChange={handleChange}
         />
-        <h6>{errors.email}</h6>
+        {touched.email && errors.email ? (
+          <h6 className="text-danger">{errors.email}</h6>
+        ) : null}
+
         <button type="submit" className="btn btn-secondary">
           Register
         </button>
